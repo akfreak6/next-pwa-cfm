@@ -5,11 +5,10 @@ export interface Student {
 	name: string;
 	rollNumber: number;
 	hobbies: string[];
-  status: string[];
+	status: string[];
 }
 export class DB extends Dexie {
-	// table name is student
-	students!: Table<Student>;
+	students!: Table<Student>; // table name student
 	constructor() {
 		super("myDatabase");
 		this.version(1).stores({
@@ -17,4 +16,4 @@ export class DB extends Dexie {
 		});
 	}
 }
-export const db = new DB(); // export the db
+export const db = new DB();

@@ -5,7 +5,5 @@ import StudentMngmt from "@/components/StudentMngmt";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <StudentMngmt />
-  );
+	return <StudentMngmt />;
 }
